@@ -9,8 +9,117 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fog2"
+    android:alpha="0.7"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="in.ac.mjcet.mj_connect.LoginActivity"
     tools:showIn="@layout/activity_login">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muffakham Jah"
+        android:id="@+id/headerName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="45dp"
+        android:theme="@style/myEditText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="College Of Enginnering And Technology"
+        android:id="@+id/collegeName"
+        android:layout_below="@+id/headerName"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Please Enter Your Name"
+        android:ems="10"
+        android:id="@+id/nameText"
+        android:layout_below="@+id/collegeName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Your Phone Number"
+        android:ems="10"
+        android:id="@+id/phoneText"
+        android:layout_below="@+id/nameText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="And Your Roll Number"
+        android:id="@+id/rollnoText"
+        android:layout_below="@+id/phoneText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/phoneText"
+        android:layout_alignEnd="@+id/phoneText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are?"
+        android:id="@+id/genderText"
+        android:layout_below="@+id/rollnoText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:textSize="18dp"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:id="@+id/femaleButton"
+        android:layout_below="@+id/rollnoText"
+        android:layout_toRightOf="@+id/genderText"
+        android:layout_toEndOf="@+id/genderText"
+        android:layout_marginTop="18dp"
+        android:checked="true"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:id="@+id/maleButton"
+        android:layout_alignTop="@+id/femaleButton"
+        android:layout_below="@+id/rollnoText"
+        android:layout_toRightOf="@+id/femaleButton"
+        android:layout_toEndOf="@+id/femaleButton"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="0dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Me In!"
+        android:id="@+id/loginButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp"
+        android:elevation="1dp"
+        android:background="?attr/selectableItemBackground"/>
+
 
 </RelativeLayout>
