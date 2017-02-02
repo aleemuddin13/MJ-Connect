@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/spinnerStream"
+        android:title="Stream"
+        app:actionViewClass="android.widget.Spinner"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/spinnerYear"
+        android:title="Year"
+        app:actionViewClass="android.widget.Spinner"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/spinnerSem"
+        android:title="Sem"
+        app:actionViewClass="android.widget.Spinner"
+        app:showAsAction="always" />
+</menu>
