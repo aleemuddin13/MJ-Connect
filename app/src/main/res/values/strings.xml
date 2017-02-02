@@ -33,4 +33,5 @@
         <item>1-sem</item>
         <item>2-sem</item>
     </string-array>
+    <string name="title_activity_web_view">WebViewActivity</string>
 </resources>
